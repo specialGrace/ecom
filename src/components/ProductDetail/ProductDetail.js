@@ -20,9 +20,6 @@ const ProductDetails = ({ productId }) => {
     dispatch(addToCart(product));
   };
 
-
-
-
   return (
     <div className="p-8">
       <div className="flex">
