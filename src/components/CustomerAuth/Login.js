@@ -173,8 +173,6 @@ const Login = () => {
           />
         </div>
       </div>
-
-//      <button onClick={handleLogin}>Login</button>
     </div>
   );
 };
