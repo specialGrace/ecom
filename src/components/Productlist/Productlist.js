@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { data } from "../../mockData"
 import { setProducts } from "../../Redux/reducers/slice/productSlice"
 import { Link } from 'react-router-dom';
-import { addToCart } from '../../Redux/Actions/cartActions';
+import { addToCart } from '../../Redux/Actions/CartActions';
 
 
  const ProductList = () => {

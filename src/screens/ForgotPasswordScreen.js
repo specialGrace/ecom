@@ -1,10 +1,10 @@
 import React from 'react'
-import ForgotPassword from '../components/CustomerAuth/ForgotPassword'
+import ResetPassword from '../components/CustomerAuth/ResetPassword'
 
 function ForgotPasswordScreen() {
   return (
     <div>
-      <ForgotPassword />
+      <ResetPassword />
     </div>
   )
 }

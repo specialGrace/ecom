@@ -1,6 +1,6 @@
 import React,{useEffect} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { addToCart } from '../../Redux/Actions/cartActions';
+import { addToCart } from '../../Redux/Actions/CartActions';
 import { setProducts } from "../../Redux/reducers/slice/productSlice"
 import { data } from "../../mockData"
 

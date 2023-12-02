@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { resetPasswordSuccess, authError } from "../../Redux/reducers/slice/authSlice";
 
-const ForgotPassword = () => {
+const ResetPassword = () => {
   const dispatch = useDispatch();
 
   const handleForgotPassword = async (email) => {
@@ -33,4 +33,4 @@ const ForgotPassword = () => {
     </div>
   );
 };
-export default ForgotPassword
+export default ResetPassword
