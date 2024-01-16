@@ -9,6 +9,7 @@ import CheckoutScreen from '../screens/CheckoutScreen';
 import NotFoundScreen from '../screens/NotFoundScreen';
 import ContactScreen from '../screens/ContactScreen';
 import LoginScreen from '../screens/LoginScreen';
+import SignUpFormScreen from '../screens/SignUpFormScreen';
 import ForgotPasswordScreen from '../screens/ForgotPasswordScreen';
 import ProductDetailScreen from '../screens/ProductDetailScreen';
 const Router = ()=> {
@@ -31,6 +32,7 @@ const Router = ()=> {
         <Route path="/products" element={<ProductListScreen />} />
         <Route path="/contact" element={<ContactScreen />} />
         <Route path="/login" element={<LoginScreen />} />
+        <Route path="/SignUpForm" element={<SignUpFormScreen />} />
         <Route path="/forgotpassword" element={<ForgotPasswordScreen />} />
         {/* <Route path="/login" element={<SignupScreen />} /> */}
       <Route path="/not-found" element={<NotFoundScreen />} />
