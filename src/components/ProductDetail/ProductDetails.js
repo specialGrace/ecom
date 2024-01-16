@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { addToCart } from '../../Redux/Actions/CartActions';
 import { setProducts } from "../../Redux/reducers/slice/productSlice"
 import { data } from "../../mockData"
+import {Productlist} from '../../components/Productlist/Productlist'
 
 const ProductDetails = ({ productId }) => {
   const dispatch = useDispatch();
@@ -26,6 +27,7 @@ const ProductDetails = ({ productId }) => {
         <img src={product.imageUrl} alt={product.name} className="w-1/3 h-auto object-cover object-center rounded-md" />
         <div className="ml-8">
           <h1 className="text-2xl font-semibold">{product.name}</h1>
+//           <p>Product ID: {productId}</p>
           <p className="mt-4 mb-4 text-sm">{product.description}</p>
           <p className="text-lg font-bold">{`Price: $${product.price}`}</p>
           <button onClick={() => handleAddToCart(product)}  className="relative flex bg-gray-100 border border-transparent rounded-md py-2 px-8 items-center justify-center text-sm font-medium text-gray-900 hover:bg-gray-200">
@@ -38,10 +40,6 @@ const ProductDetails = ({ productId }) => {
 };
 
 export default ProductDetails;
-
-
-
-
 
 
 

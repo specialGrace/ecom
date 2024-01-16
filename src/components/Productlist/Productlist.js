@@ -42,9 +42,10 @@ import { addToCart } from '../../Redux/Actions/CartActions';
         <div className="mt-8 grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
         {filteredProducts.map((product) => (
             <div key={product.id} className="border p-4">
-               <Link to='/product/:productId' className="text-lg font-medium block">
+               <Link to={`/product/${product.id}`} className="text-lg font-medium block">
                {product.name}
                </Link>
+
               <div className="relative">
                 <div className="relative w-full h-72 rounded-lg overflow-hidden">
 
@@ -89,8 +90,6 @@ import { addToCart } from '../../Redux/Actions/CartActions';
 
 
 export default ProductList
-
-
 
 
 
